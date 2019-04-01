@@ -29,14 +29,14 @@
   
   <distributionManagement>
     <snapshotRepository>
-    <id>Repo1</id>
-	<name>Repo1</name>
+    <id>repo</id>
+	<name>repo</name>
     <url>http://localhost:8081/nexus/content/repositories/repo/</url>
     </snapshotRepository> 
     
   <repository>
-    <id>ReleasesRepo</id>
-	<name>ReleasesRepo</name>
+    <id>Repo1</id>
+	<name>Repo1</name>
     <url>http://localhost:8081/nexus/content/repositories/Repo1/</url>
   </repository>
   
