@@ -26,6 +26,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+    <snapshotRepository>
+    <id>Repo1</id>
+	<name>Repo1</name>
+    <url>http://localhost:8081/nexus/content/repositories/repo/</url>
+    </snapshotRepository> 
+    
+  <repository>
+    <id>ReleasesRepo</id>
+	<name>ReleasesRepo</name>
+    <url>http://localhost:8081/nexus/content/repositories/Repo1/</url>
+  </repository>
+  
+</distributionManagement>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
