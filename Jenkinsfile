@@ -3,6 +3,6 @@ node{
     git 'https://github.com/nari410/repo-2'
  }
 stage('Compile-Package'){
- sh 'mvn package'
+  sh "${mvnHome}/bin/mvn package"
 }
 }
