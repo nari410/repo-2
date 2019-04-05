@@ -2,9 +2,16 @@ node{
   stage('SCM Checkout'){
     git 'https://github.com/nari410/repo-2'
  }
-stage('Compile-Package'){
-  // Get maven home path
-  def mvnHome = tool name: 'M2_HOME', type: 'maven'
-  sh "${mvnHome}/bin/mvn package"
+stage('build'){
+  echo "this is build stage"  
 }
+  stage (' test'){
+  echo "this is unit test"
+  }
+  stage('package'){
+echo " this is package"
+  }
+ stage('deploy'){
+   echo " this is deploy"
+  }
 }
